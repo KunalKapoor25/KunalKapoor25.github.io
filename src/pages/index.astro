@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+
+const title = 'Kunal Kapoor — ML researcher & engineer';
+const description = 'Kunal Kapoor is an ML researcher and engineer building training systems, evaluation infrastructure, and applied ML products.';
+---
+
+<Base {title} {description}>
+  <main class="page">
+    <header class="site-header">
+      <a class="wordmark" href="#top">Kunal Kapoor</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="/kunal-kapoor-resume.pdf">Résumé</a><a href="https://www.linkedin.com/in/kkapoor25/" rel="noreferrer">LinkedIn</a><a href="https://github.com/KunalKapoor25" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+    <section class="hero" id="top">
+      <p class="eyebrow">ML researcher &amp; engineer</p>
+      <h1>Building systems that make machine learning useful in the real world.</h1>
+      <p class="lede">I studied Computer Science with a Machine Learning concentration at Carnegie Mellon. My work spans training and evaluation for conversational agents, model distillation, and research on how neural networks learn and forget.</p>
+    </section>
+    <section aria-labelledby="work" id="work">
+      <div class="section-heading"><p class="eyebrow">Selected work</p><h2>Research and systems</h2></div>
+      <div class="work-list">
+        <article><p class="item-meta">2025 · Founding engineer</p><div><h3>Training and evaluation for voice agents</h3><p>Built an RL environment and training pipeline for instruction-following voice agents, then developed synthetic-caller evaluations to stress-test production systems across adversarial scenarios.</p></div></article>
+        <article><p class="item-meta">Robotics · Research project</p><div><h3>Diffusion policy for robotic imitation learning</h3><p>Implemented and evaluated a transformer-based diffusion policy that generates multi-step robot actions by denoising trajectories conditioned on state history.</p></div></article>
+        <article><p class="item-meta">Machine learning · Research project</p><div><h3>Learning with diffusion models</h3><p>Built transformer-based speech recognition and diffusion models for multi-step financial forecasting, combining market data with sentiment embeddings from more than 80,000 tweets.</p></div></article>
+      </div>
+    </section>
+    <section aria-labelledby="experience" id="experience">
+      <div class="section-heading"><p class="eyebrow">Experience</p><h2>Applied ML, research, and teaching</h2></div>
+      <ol class="timeline">
+        <li><div><h3>Stealth startup</h3><p>Founding Engineer</p></div><p class="item-meta">2025</p><p>Developed RL training, prompt optimization, and adversarial testing infrastructure for conversational voice agents.</p></li>
+        <li><div><h3>Moloco</h3><p>Machine Learning Engineering Intern</p></div><p class="item-meta">2024</p><p>Worked on revenue-model distillation and data pipelines; automated the workflow with Airflow and built reusable training-data augmentation in GCP Dataflow.</p></li>
+        <li><div><h3>Apple</h3><p>Machine Learning Engineering Intern</p></div><p class="item-meta">2023</p><p>Improved performance-anomaly detection, built correlation tooling for engineers, and trained an autoencoder on Vision Pro performance traces.</p></li>
+        <li><div><h3>Carnegie Mellon University</h3><p>Researcher · Teaching Assistant</p></div><p class="item-meta">2023–present</p><p>Researching fine-tuning, overparameterization, and catastrophic forgetting; teaching Mathematical &amp; Computational Foundations for ML.</p></li>
+        <li><div><h3>MIT PRIMES</h3><p>Researcher</p></div><p class="item-meta">2020–2022</p><p>Advanced a more fault-tolerant dynamic consensus protocol and presented the work to researchers at MIT.</p></li>
+      </ol>
+    </section>
+    <section class="closing" aria-labelledby="contact"><p class="eyebrow">Elsewhere</p><h2 id="contact">Find my work or get in touch.</h2><div class="contact-links"><a href="/kunal-kapoor-resume.pdf">Download résumé <span aria-hidden="true">↓</span></a><a href="https://www.linkedin.com/in/kkapoor25/" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/KunalKapoor25" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></section>
+    <footer>© 2026 Kunal Kapoor</footer>
+  </main>
+</Base>
